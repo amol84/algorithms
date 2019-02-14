@@ -10,7 +10,20 @@ public class main {
 		runLongestWord();
 		runCanWatchMovie();
 		runReverseLinkedList();
+		runQueueImplementation();
 	}
+
+	private static void runQueueImplementation() {
+        Queue q= new Queue();
+        q.enqueue('a');
+        q.enqueue('b');
+        System.out.println(q.dequeue());
+        q.enqueue('c');
+        System.out.println(q.dequeue());
+        System.out.println(q.dequeue());
+    }
+		
+
 
 	private static void runReverseLinkedList() {
         Scanner s = new Scanner(System.in);
