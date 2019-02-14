@@ -8,6 +8,13 @@ public class main {
 		// TODO Auto-generated method stub
 		runAdjacencyList();
 		runLongestWord();
+		runCanWatchMovie();
+	}
+
+	private static void runCanWatchMovie() {
+        CanWatchMovie main = new CanWatchMovie();
+        int[] movieLengths = {3,4,2,1,5};
+   System.out.println(main.canWatchMovie(movieLengths,10));		
 	}
 
 	private static void runAdjacencyList() {
