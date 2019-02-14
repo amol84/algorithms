@@ -9,6 +9,23 @@ public class main {
 		runAdjacencyList();
 		runLongestWord();
 		runCanWatchMovie();
+		runReverseLinkedList();
+	}
+
+	private static void runReverseLinkedList() {
+        Scanner s = new Scanner(System.in);
+        int size = Integer.parseInt(s.nextLine());
+        int[] values = new int[size];
+        LinkedList ll = new LinkedList();
+
+        for(int i=0; i<size; i++) {
+            values[i] = Integer.parseInt(s.nextLine());
+        }
+        LinkedList.Node start = ll.addNodes();
+        ll.printNodes(start);
+        start = ll.reverseList(start, null);
+        ll.printNodes(start);
+		
 	}
 
 	private static void runCanWatchMovie() {
